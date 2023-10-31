@@ -1,0 +1,46 @@
+body {
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+    width: 600px;
+}
+
+.breed-select {
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.loader {
+    margin: 100px auto;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ff4d00;
+    box-shadow: 32px 0 #ff4d00, -32px 0 #ff4d00;
+    position: relative;
+    animation: flash 0.5s ease-out infinite alternate;
+}
+
+@keyframes flash {
+    0% {
+        background-color: #fff2;
+        box-shadow: 32px 0 #fff2, -32px 0 #ff4d00;
+    }
+
+    50% {
+        background-color: #ff4d00;
+        box-shadow: 32px 0 #fff2, -32px 0 #fff2;
+    }
+
+    100% {
+        background-color: #fff2;
+        box-shadow: 32px 0 #ff4d00, -32px 0 #fff2;
+    }
+}
+
+.is-hidden {
+    display: none;
+}
